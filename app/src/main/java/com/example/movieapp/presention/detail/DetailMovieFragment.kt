@@ -1,4 +1,4 @@
-package com.example.movieapp.presention.saved
+package com.example.movieapp.presention.detail
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,14 +7,15 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.movieapp.R
 
-class SaveFragment : Fragment() {
+
+class DetailMovieFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_save, container, false)
+        return inflater.inflate(R.layout.fragment_detail_movie, container, false)
 
     }
 }

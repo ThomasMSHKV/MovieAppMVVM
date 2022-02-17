@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.example.movieapp.databinding.ActivityMainBinding
 import com.example.movieapp.presention.home.HomeFragment
-import com.example.movieapp.presention.saved.SaveFragment
+import com.example.movieapp.presention.saved.FirstFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding?.root)
         setBottomNavigation()
-        changeFragment(HomeFragment())
+        changeFragment(FirstFragment())
 
     }
 
@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         binding?.bottomNavigationBar?.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.nav_home -> changeFragment(HomeFragment())
-                R.id.nav_save -> changeFragment(SaveFragment())
+                R.id.nav_save -> changeFragment(FirstFragment())
 
             }
             true
